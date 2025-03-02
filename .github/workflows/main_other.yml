@@ -4,4 +4,6 @@ jobs:
  checkout:
   runs-on: ubuntu-latest
   steps:
-   - run : ls
+   - run: ls
+   - uses: actions/checkout@v4
+   - run: ls
