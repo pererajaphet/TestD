@@ -1,0 +1,20 @@
+name: my workflow with var
+on: [push]
+env:
+  NIVEAU_WORKFLOW: "Je suis une variable de workflow"
+
+jobs:
+  mon_job:
+    runs-on: ubuntu-latest
+    env:
+      NIVEAU_JOB: "Je suis une variable de job"
+    steps:
+      - name: Étape 1
+        env:
+          NIVEAU_ETAPE: "Je suis une variable d'étape"
+        run: |
+          echo ${{ env.NIVEAU_WORKFLOW }}
+          echo ${{ env.NIVEAU_JOB }}
+          echo ${{ env.NIVEAU_ETAPE }}
+          echo ${{ vars.MY_VAR }}
+          echo ${{ secrets.MY_SECRET }}
