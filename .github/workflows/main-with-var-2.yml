@@ -1,4 +1,4 @@
-name: my workflow with var
+name: my workflow with var 2
 on: [push]
 env:
   NIVEAU_WORKFLOW: "Je suis une variable de workflow"
@@ -16,5 +16,5 @@ jobs:
           echo ${{ env.NIVEAU_WORKFLOW }}
           echo ${{ env.NIVEAU_JOB }}
           echo ${{ env.NIVEAU_ETAPE }}
-          echo ${{ vars.MY_VAR }}
-          echo ${{ secrets.MY_SECRET }}
+          echo ${{ vars.my_var }}
+          echo ${{ secrets.my_secret }}
