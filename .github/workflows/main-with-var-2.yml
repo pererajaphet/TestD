@@ -16,5 +16,4 @@ jobs:
           echo ${{ env.NIVEAU_WORKFLOW }}
           echo ${{ env.NIVEAU_JOB }}
           echo ${{ env.NIVEAU_ETAPE }}
-          echo ${{ vars.MY_VAR }}
           echo ${{ secrets.MY_SECRET }}
