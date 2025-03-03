@@ -6,6 +6,6 @@ on:
    - feature
 jobs:
  build:
- runs-on: utuntu:latest
- steps:
-  - run: echo "hello !"
+  runs-on: utuntu:latest
+  steps:
+   - run: echo "hello !"
