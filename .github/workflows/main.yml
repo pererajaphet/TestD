@@ -6,6 +6,6 @@ on:
    - feature
 jobs:
  build:
-  runs-on: utuntu:latest
+  runs-on: ubuntu:latest
   steps:
    - run: echo "hello !"
