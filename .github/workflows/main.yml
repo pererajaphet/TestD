@@ -1,9 +1,5 @@
 name: Mon workflow
-on:
- push:
-  branches:
-   - main
-   - feature
+on: [push]
 jobs:
  build:
   runs-on: ubuntu:latest
