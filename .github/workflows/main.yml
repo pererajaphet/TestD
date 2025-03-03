@@ -1,0 +1,11 @@
+name: Mon workflow
+on:
+ push:
+  branches:
+   - main
+   - feature
+ jobs:
+  build:
+  runs-on: utuntu:latest
+  steps:
+   - run: echo "hello !"
